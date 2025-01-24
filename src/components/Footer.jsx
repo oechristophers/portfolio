@@ -1,3 +1,5 @@
+import React from 'react'
+
 import { AiFillCopyrightCircle } from 'react-icons/ai'
 import { MdMail } from 'react-icons/md'
 import { AiOutlineWhatsApp } from 'react-icons/ai'
