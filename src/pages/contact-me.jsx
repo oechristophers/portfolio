@@ -1,11 +1,11 @@
 import { useState } from 'react';
-import BannerLayout from '../components/Common/BannerLayout';
+import BannerLayout from '@/components/Common/BannerLayout';
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
 import { SiUpwork } from 'react-icons/si'
 import { HiMail, HiUser } from 'react-icons/hi'
 import { BsChatTextFill } from 'react-icons/bs'
-import Fiverr_Icon from '../components/Fiverr_Icon';
-import Footer from '../components/Footer';
+import Fiverr_Icon from '@/components/Fiverr_icon';
+import Footer from '@/components/Footer';
 import { Modal } from 'antd';
 
 const Contact = () => {
