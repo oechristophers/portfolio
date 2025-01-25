@@ -1,24 +1,40 @@
-import React from 'react';
+import { useEffect } from 'react';
+import { Modal, ModalBody, ModalContent, ModalTrigger } from './ui/animated-modal';
 
-const SimpleModal = ({ isOpen, onClose, children }) => {
-  if (!isOpen) return null;
+export default function SimpleModal() {
+  useEffect(() => {
+    // Disable scrolling on modal mount
+    document.body.style.overflow = 'hidden';
+
+    // Cleanup on unmount
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, []);
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
-      <div className="bg-white p-6 rounded-lg shadow-lg w-96">
-        <div className="flex justify-between items-center">
-          <h2 className="text-xl font-bold">In Progress</h2>
-          <button onClick={onClose} className="text-xl font-bold">X</button>
+    <Modal >
+      <ModalTrigger className="dark:bg-white dark:text-black text-white flex justify-center group/modal-btn">
+        <div className="mb-4">
+          <button className="button"> SEND MESSAGE </button>
         </div>
-        <div className="mt-4">
-          {children}
-        </div>
-        <button onClick={onClose} className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg">
-          Close
-        </button>
-      </div>
-    </div>
+      </ModalTrigger>
+      <ModalBody className="fixed border-2 border-[#ffffff6b] rounded-xl w-[80%] md:w-[100vw] place-items-center bg-black md:bg-[#00000088] h-screen overflow-y-hidden mt-[60rem]">
+        <ModalContent >
+          <div className="flex flex-col my-auto items-center justify-center">
+            <h1 className="text-Green font-bold text-2xl">In Progress</h1>
+            <a
+              className="underline text-Snow"
+              target="_blank"
+              href="https://github.com/oechristophers/"
+              rel="noopener noreferrer"
+            >
+              Find me on Github!
+            </a>
+          </div>
+        </ModalContent>
+       
+      </ModalBody>
+    </Modal>
   );
-};
-
-export default SimpleModal;
+}
