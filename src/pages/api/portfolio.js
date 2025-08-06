@@ -29,7 +29,7 @@ const portfolio = [
     id: 0,
     projectName: "Veegil Bank",
     url: "https://veegilfe.netlify.app/",
-    image: "/projects/veegil-snip.png",
+    image: "/projects/veegil-bank.png",
     projectDetail:
       "VeegiLFE is a full-featured mock banking application that replicates real-world banking functionality without handling actual funds. Built with NestJS, MongoDB, Next.js, React, Redux Toolkit, ShadCN UI, and Tailwind CSS, it features real-time transaction updates, a dynamic transaction history with intuitive badges, and a clean, responsive user interface. This project demonstrates advanced skills in full-stack development, real-time data handling, and modern UI design.",
     technologiesUsed: [
