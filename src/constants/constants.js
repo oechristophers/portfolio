@@ -37,8 +37,15 @@ export const TECH_STACK = [
   'NextJS',
   'TypeScript',
   'NodeJS',
+  'NestJS',
+  'TypeORM',
+  'SQL',
+  'PostgreSQL',
+  'GraphQL',
+  'Docker',
   'Redux',
   'Zustand',
+  'RTK Query',
   'CSS',
   'TailwindCSS',
   'MongoDB',
@@ -48,6 +55,8 @@ export const TECH_STACK = [
   'DjangoDB',
   'Git',
   'GitHub',
+  'GitLab',
+  'Figma',
 ];
 
 export const CONTACTS = {

@@ -24,6 +24,52 @@ const portfolio = [
       },
     ],
   },
+
+  {
+    id: 0,
+    projectName: "Veegil Bank",
+    url: "https://veegilfe.netlify.app/",
+    image: "/projects/veegil-snip.png",
+    projectDetail:
+      "VeegiLFE is a full-featured mock banking application that replicates real-world banking functionality without handling actual funds. Built with NestJS, MongoDB, Next.js, React, Redux Toolkit, ShadCN UI, and Tailwind CSS, it features real-time transaction updates, a dynamic transaction history with intuitive badges, and a clean, responsive user interface. This project demonstrates advanced skills in full-stack development, real-time data handling, and modern UI design.",
+    technologiesUsed: [
+      {
+        tech: "NextJS",
+      },
+      {
+        tech: "ShadCN UI",
+      },
+      {
+        tech: "TailwindCSS",
+      },
+      {
+        tech: "Redux Toolkit",
+      },
+      {
+        tech: "NestJS",
+      },
+      {
+        tech: "MongoDB",
+      },
+    ],
+  },
+  
+  {
+    id: 0,
+    projectName: "AI Chatbot",
+    url: "https://chatbot-test-ygrf.onrender.com/",
+    image: "/projects/ai-chatbot.png",
+    projectDetail:
+      "AI Customer Service Chatbot is a rule-based intelligent assistant built with Python and Flask, designed to deliver instant customer support. It leverages pattern matching and natural language processing (NLP) to interpret user intents and generate accurate, context-aware responses. This project showcases practical applications of AI in customer service automation, combining backend logic with conversational intelligence.",
+    technologiesUsed: [
+      {
+        tech: "Python",
+      },
+      {
+        tech: "Flask",
+      },
+    ],
+  },
   {
     id: 0,
     projectName: "We-Tube",

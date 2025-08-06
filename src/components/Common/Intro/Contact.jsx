@@ -1,6 +1,6 @@
-import dynamic from 'next/dynamic';
+import dynamic from "next/dynamic";
 
-const LottieNoSSR = dynamic(() => import('lottie-react'), { ssr: false });
+const LottieNoSSR = dynamic(() => import("lottie-react"), { ssr: false });
 
 import { useState } from "react";
 import { IoCopyOutline } from "react-icons/io5";
