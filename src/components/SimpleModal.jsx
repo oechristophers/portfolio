@@ -111,7 +111,7 @@ export default function SimpleModal({ isOpen, onClose }) {
           </div>
           <h1 className="text-green-400 font-bold text-2xl">Message Sent!</h1>
           <p className="text-Snow text-sm">
-            Thank you for reaching out! I'll get back to you soon.
+            Thank you for reaching out! I&apos;ll get back to you soon.
           </p>
           <button
             onClick={onClose}
